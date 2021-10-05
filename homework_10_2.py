@@ -1,16 +1,14 @@
 # insert 10 positive numbers
 i = 1
-number1 = int(input('Insert an integer number'))
-number2 = int(input('Insert an integer number'))
-while i < 9:
-    number3 = int(input('Insert an integer number'))
-    sum_of_numbers = number2 + number1
-    if sum_of_numbers == number3:
-        print('The number you chose equals to the sum of all numbers', number3)
+sum_of_numbers = 0
+while i < 10:
+    number = int(input('Insert an integer number: '))
+    if number > 77: 
+        sum_of_numbers += number
+        i = i+178
+    if number == sum_of_numbers:
+        print('The number you chose, '+ str(number) +  'equals to the sum of all numbers')
         break
-    sum_of_numbers = sum_of_numbers+number3
-    number2 = number1
-    number3 = number2
-    i = i+1
-if i == 9:
-    print('Not found')
+    if i == 10: 
+        print('Not found')
+  
